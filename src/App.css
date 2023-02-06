@@ -1,0 +1,295 @@
+
+*{
+  margin:0;
+  padding: 0;
+  background-color:rgb(242, 242, 205);
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+p{
+  writing-mode:vertical-rl;
+  position: absolute;
+  left: 43%;
+  top:3%;
+  transform: rotate(180deg);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(3, 98, 98);
+}
+h1{
+  font-size: 3rem;
+ color: rgb(62, 225, 225);
+}
+@media (max-width:768px) {
+  p{
+    position: absolute;
+    left: 8%;
+    color:rgb(161, 52, 52);
+    font-size: 1rem;
+  }
+  h1{
+   font-size: 3rem;
+   color: rgb(9, 9, 11);
+   position:absolute;
+   left: 13%;
+   color: white;
+   font-size: 1.5rem;
+   top:2.5%;
+
+  }
+}
+
+
+
+
+#Right-Side {
+  position: absolute;
+  top: 10em;
+  right: 20px;
+  width: 35%;
+}
+
+#container {
+  margin: 20px;
+  margin-top: 1.5em;
+  padding-top: 20px;
+}
+
+#Title {
+  padding: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(110, 22, 22);
+}
+
+#box {
+  margin-top: 60px;
+}
+
+#parent {
+  display: flex;
+  border: 1px solid gray;
+  width: 60%;
+}
+
+#parent:hover {
+  opacity: 60%;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.miniTitle1 {
+  font-size: 22px;
+  font-weight: 600;
+  height: 30px;
+  overflow: hidden;
+}
+
+.miniParagraph1 {
+  font-size: 17px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.Traval1 {
+  font-size: 16px;
+  color: rgb(107, 104, 104);
+}
+
+#Title {
+  color:rgb(46, 46, 218);
+}
+
+
+#title-Fold {
+  animation: color 5s linear infinite;
+}
+
+@keyframes color {
+  0% {
+    color: yellow;
+    border-radius: 20px;
+    transform: translateX(10px);
+    transform: rotateX(90deg);
+  }
+
+  25% {
+    color: black;
+    border-radius: 40px;
+    transform: translateX(0px);
+  }
+
+  50% {
+    color: green;
+    border-radius: 20px;
+    transform: translateX(-10px);
+  }
+
+  75% {
+    color: black;
+    border-radius: 40px;
+    transform: translateX(0px);
+  }
+
+  100% {
+    color: rgb(248, 82, 82);
+    border-radius: 20px;
+    transform: translateX(10px);
+  }
+}
+
+#top-Post {
+  width: 495px;
+  position: absolute;
+  top: 10em;
+  right: 0;
+}
+
+#addBox {
+  width: 470px;
+  height: 60em;
+  background-image:linear-gradient(to bottom right ,orange,white,green);
+  border: 3px solid rgb(219, 75, 219);
+  background-size: contain;
+  margin-top: 38px;
+  animation: ads 5s linear infinite alternate;
+}
+#addBox h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80%;
+  font-size:3rem;
+  text-shadow: 3px 4px 5px white;
+}
+
+@keyframes ads {
+  0% {
+    background-image:url('https://blog.digitalj2.com/hubfs/Blog%2017%20Image%20Sizing%20for%20Ads%20and%20Web%20Design-1.png');
+    background-size: contain;
+    color: purple;
+  }
+
+  25% {
+    background-image:url('https://kinsta.com/wp-content/uploads/2020/05/banner-text.png');
+    background-size: contain;
+    color: red;
+  }
+
+  50% {
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKaMV2mxmO3_Jmt4FEBpLFT5HVHKh3VM-RkW4hijyn0xWaIEgtOu_BeRSAj97HtpkfA&usqp=CAU');
+    color: purple;
+    background-size: contain;
+  }
+
+  100% {
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5yV_Ms9gO76K78f9ijDqRPQfZnbNdpRs4lJvP-CKJKyqBc83Z-GKYCkoBsylDA-5MfC8&usqp=CAU');
+    color: red;
+    background-size: contain;
+  }
+}
+
+#Right-Main {
+  position: absolute;
+  top: 75em;
+  right: 20px;
+  width: 500px;
+}
+
+
+
+@media screen and (max-width:400px) {
+  #header-nav{
+    display:none;
+  }
+
+  #addBox {
+    display: none;
+  }
+
+  #two {
+    display: none;
+  }
+
+  #three {
+    display: none;
+  }
+  #one #img2 img{
+    position: relative;
+    right: 36px;
+    width: 385px;
+    height: 250px;
+    border-radius: none;
+  }
+  
+  #container-Right{
+    position:absolute;
+    top: 100em;
+    left: 30%;
+    width: 360px;
+  }
+  #end{
+    position: relative;
+    top: 75em;
+  }
+  #top-Parent img{
+    width: 320px;
+  }
+  #container{
+    position: relative;
+    bottom: 50px;
+  }
+  #parent {
+    display: flex;
+    border: 1px solid gray;
+    width: 100%;
+    height: 100px;
+  }
+  .img1{
+    width: 140px;
+    height: 100%;
+  }
+  .miniTitle1{
+    height: 22px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .miniParagraph1{
+    height: 23px;
+    font-size: 14px;
+  }
+
+  /*Bollywood Page*/
+
+  #Right-Side {
+    position:absolute;
+    top: 40px;
+    right: 265px;
+    width: 40%;
+  }
+  #title-Fold{
+    font-size: 16px;
+  }
+  #detais-img{
+    width: 370px;
+    height: 300px;
+    position: relative;
+    right: 15px;
+  }
+  #details-content{
+    width: 100px;
+    position: relative;
+    top: 10px;
+    right: 70px;
+    font-size: 13px;
+  }
+} 
